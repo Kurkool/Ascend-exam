@@ -5,92 +5,86 @@ import java.io.Serializable;
 public class InquiryServiceResultDTO implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    private java.lang.String tranID;
-
+    private String tranID;
     private String namespace;
-
-    private java.lang.String reasonCode;
-
-    private java.lang.String reasonDesc;
-
-    private java.lang.String balance;
-
-    private java.lang.String ref_no1;
-
-    private java.lang.String ref_no2;
-
-    private java.lang.String amount;
-
+    private String reasonCode;
+    private String reasonDesc;
+    private String balance;
+    private String refNo1;
+    private String refNo2;
+    private String amount;
     private String accountName = null;
 
-    public java.lang.String getTranID() {
+    public InquiryServiceResultDTO() {
+
+    }
+
+    public String getTranID() {
         return tranID;
-    }
-
-    public void setTranID(java.lang.String tranID) {
-        this.tranID = tranID;
-    }
-
-    public java.lang.String getReasonCode() {
-        return reasonCode;
-    }
-
-    public void setReasonCode(java.lang.String reasonCode) {
-        this.reasonCode = reasonCode;
-    }
-
-    public java.lang.String getReasonDesc() {
-        return reasonDesc;
-    }
-
-    public void setReasonDesc(java.lang.String reasonDesc) {
-        this.reasonDesc = reasonDesc;
-    }
-
-    public java.lang.String getBalance() {
-        return balance;
-    }
-
-    public void setBalance(java.lang.String balance) {
-        this.balance = balance;
-    }
-
-    public java.lang.String getRef_no1() {
-        return ref_no1;
-    }
-
-    public void setRef_no1(java.lang.String ref_no1) {
-        this.ref_no1 = ref_no1;
-    }
-
-    public java.lang.String getRef_no2() {
-        return ref_no2;
-    }
-
-    public void setRef_no2(java.lang.String ref_no2) {
-        this.ref_no2 = ref_no2;
-    }
-
-    public java.lang.String getAmount() {
-        return amount;
-    }
-
-    public void setAmount(java.lang.String amount) {
-        this.amount = amount;
     }
 
     public String getNamespace() {
         return namespace;
     }
 
+    public String getReasonCode() {
+        return reasonCode;
+    }
+
+    public String getReasonDesc() {
+        return reasonDesc;
+    }
+
+    public String getBalance() {
+        return balance;
+    }
+
+    public String getRefNo1() {
+        return refNo1;
+    }
+
+    public String getRefNo2() {
+        return refNo2;
+    }
+
+    public String getAmount() {
+        return amount;
+    }
+
+    public String getAccountName() {
+        return accountName;
+    }
+
+    public void setTranID(String tranID) {
+        this.tranID = tranID;
+    }
+
     public void setNamespace(String namespace) {
         this.namespace = namespace;
     }
 
+    public void setReasonCode(String reasonCode) {
+        this.reasonCode = reasonCode;
+    }
 
+    public void setReasonDesc(String reasonDesc) {
+        this.reasonDesc = reasonDesc;
+    }
 
-    public String getAccountName() {
-        return accountName;
+    public void setBalance(String balance) {
+        this.balance = balance;
+    }
+
+    public void setRefNo1(String refNo1) {
+        this.refNo1 = refNo1;
+    }
+
+    public void setRefNo2(String refNo2) {
+        this.refNo2 = refNo2;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
 
     public void setAccountName(String accountName) {
@@ -101,10 +95,7 @@ public class InquiryServiceResultDTO implements Serializable {
     public String toString() {
         return "InquiryServiceResultDTO [tranID=" + tranID + ",namespace = "+namespace + ", reasonCode="
                 + reasonCode + ", reasonDesc=" + reasonDesc + ", balance="
-                + balance + ", ref_no1=" + ref_no1 + ", ref_no2=" + ref_no2
+                + balance + ", refNo1=" + refNo1 + ", refNo1=" + refNo2
                 + ", amount=" + amount + " ,account_name="+accountName+"  ]";
     }
-
-
-
 }
